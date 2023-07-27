@@ -1,0 +1,20 @@
+/* ================ UTILS ================ */
+@import "./utils/variables.css";
+
+/* ================ BASE ================ */
+@import "./base/common.css";
+@import "./base/container.css";
+@import "./base/section.css";
+
+/* ================ LAYOUTS ================ */
+@import "./layouts/header.css";
+@import "./layouts/burger.css";
+@import "./layouts/hero.css";
+@import "./layouts/mobile-burger-menu.css";
+@import "./layouts/buttons.css";
+@import "./layouts/hero-modal-mobile.css";
+@import "./layouts/doing-section.css";
+@import "./layouts/our-team.css";
+@import "./layouts/features.css";
+@import "./layouts/footer.css";
+@import "./layouts/customers.css";

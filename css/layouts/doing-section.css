@@ -1,0 +1,15 @@
+.section.doing-section {
+  display: none;
+}
+@media screen and (min-width: 1158px) {
+  .section.doing-section {
+    display: flex;
+  }
+  .doing-ul {
+    display: flex;
+    gap: 24px;
+  }
+  .doing-li {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}

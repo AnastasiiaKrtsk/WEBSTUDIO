@@ -15,8 +15,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <!-- =======================HEADER======================= -->
+
     <header class="header">
       <div class="container header-div">
         <nav class="nav">
@@ -35,15 +38,32 @@
             </li>
           </ul>
         </nav>
+
+        <button
+          class="burger-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="burger-svg"
+            width="32"
+            height="22"
+            aria-label="burger-menu-icon"
+          >
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+
         <address class="address">
           <ul class="list address-ul">
-            <li>
-              <a class="link address-li" href="mailto:info@devstudio.com"
+            <li class="address-li">
+              <a class="link address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com
               </a>
             </li>
-            <li>
-              <a class="link address-li" href="tel:+110001111111"
+            <li class="address-li">
+              <a class="link address-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11
               </a>
             </li>
@@ -53,6 +73,8 @@
     </header>
 
     <main>
+      <!-- =======================HERO======================= -->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero-tittle">Effective Solutions for Your Business</h1>
@@ -62,8 +84,10 @@
         </div>
       </section>
 
+      <!-- =======================FEATURES======================= -->
+
       <section class="section features">
-        <div class="container">
+        <div class="container features-div">
           <h2 class="section-tittle visually-hidden">features</h2>
           <ul class="list features-ul">
             <li class="features-li">
@@ -118,32 +142,56 @@
         </div>
       </section>
 
-      <section class="section">
+      <!-- =======================WHAT ARE WE DOING======================= -->
+
+      <section class="section doing-section">
         <div class="container">
           <h2 class="section-tittle">What are we doing</h2>
           <ul class="list doing-ul">
             <li class="doing-li">
-              <img src="./images/monitor.jpg" alt="monitor" width="360" />
+              <img
+                srcset="./images/main-page/offer/offer-img-01@2x.jpg 2x"
+                src="./images/main-page/offer/offer-img-01.jpg"
+                alt="monitor"
+                width="360"
+              />
             </li>
             <li class="doing-li">
-              <img src="./images/mobile.jpg" alt="mobile" width="360" />
+              <img
+                srcset="./images/main-page/offer/offer-img-02@2x.jpg 2x"
+                src="./images/main-page/offer/offer-img-02.jpg"
+                alt="mobile"
+                width="360"
+              />
             </li>
             <li class="doing-li">
-              <img src="./images/photo.jpg" alt="photo" width="360" />
+              <img
+                srcset="./images/main-page/offer/offer-img-03@2x.jpg 2x"
+                src="./images/main-page/offer/offer-img-03.jpg"
+                alt="photo"
+                width="360"
+              />
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- =======================OUR TEAM======================= -->
 
       <section class="our-team">
         <div class="container team-div">
           <h2 class="section-tittle">Our Team</h2>
           <ul class="list team-ul">
             <li class="team-li">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/main-page/employee/employee01@2x.jpg 2x"
+                src="./images/main-page/employee/employee01.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="social-div">
-                <h3 class="section-subheading">Mark Guerrero</h3>
-                <p class="text">Product Designer</p>
+                <h3 class="team-subheading">Mark Guerrero</h3>
+                <p class="text team-text">Product Designer</p>
                 <ul class="list team-social-ul">
                   <li class="team-social-li">
                     <a class="link social-link" href="">
@@ -177,10 +225,15 @@
               </div>
             </li>
             <li class="team-li">
-              <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/main-page/employee/employee02@2x.jpg 2x"
+                src="./images/main-page/employee/employee02@1x.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="social-div">
-                <h3 class="section-subheading">Tom Ford</h3>
-                <p class="text">Frontend Developer</p>
+                <h3 class="team-subheading">Tom Ford</h3>
+                <p class="text team-text">Frontend Developer</p>
                 <ul class="list team-social-ul">
                   <li class="team-social-li">
                     <a class="link social-link" href="">
@@ -214,10 +267,15 @@
               </div>
             </li>
             <li class="team-li">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/main-page/employee/employee03@2x.jpg 2x"
+                src="./images/main-page/employee/employee03@1x.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="social-div">
-                <h3 class="section-subheading">Camila Garcia</h3>
-                <p class="text">Marketing</p>
+                <h3 class="team-subheading">Camila Garcia</h3>
+                <p class="text team-text">Marketing</p>
                 <ul class="list team-social-ul">
                   <li class="team-social-li">
                     <a class="link social-link" href="">
@@ -251,10 +309,15 @@
               </div>
             </li>
             <li class="team-li">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/main-page/employee/employee04@2x.jpg 2x"
+                src="./images/main-page/employee/employee04@1x.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="social-div">
-                <h3 class="section-subheading">Daniel Wilson</h3>
-                <p class="text">UI Designer</p>
+                <h3 class="team-subheading">Daniel Wilson</h3>
+                <p class="text team-text">UI Designer</p>
                 <ul class="list team-social-ul">
                   <li class="team-social-li">
                     <a class="link social-link" href="">
@@ -290,6 +353,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- =======================CUSTOMERS======================= -->
 
       <section class="section">
         <div class="container">
@@ -391,7 +456,6 @@
           <p class="footer-text">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label" for="user-email">
-              <!-- <span class="footer-wrap-div"> -->
               <input
                 class="footer-input"
                 type="email"
@@ -400,8 +464,6 @@
                 placeholder="E-mail"
                 required
               />
-
-              <!-- </span> -->
             </label>
             <button class="subscribe-btn" type="submit">
               Subscribe
@@ -413,6 +475,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- =======================MODAL======================= -->
 
     <div class="modal is-hidden" data-modal>
       <div class="backdrop">
@@ -506,13 +570,13 @@
               id="user-privacy"
               value="true"
             />
-            <label class="label" for="user-privacy">
+            <label class="checkbox-label" for="user-privacy">
               <span class="privacy-span">
                 <svg class="check-svg" width="10" height="8">
                   <use href="./images/icons.svg#check"></use>
                 </svg>
-                I accept the terms and conditions of the
               </span>
+              I accept the terms and conditions of the
               <a href="" class="privacy-link">Privacy Policy</a>
             </label>
           </div>
@@ -520,6 +584,87 @@
         </form>
       </div>
     </div>
+
+    <div class="burger-menu js-menu-container">
+      <button class="button-cross js-close-menu" type="button" data-modal-close>
+        <svg class="btn-cross-svg" width="8" height="9" aria-label="close icon">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+
+      <nav class="burger-nav">
+        <ul class="list burger-nav-ul">
+          <li class="header-item">
+            <a class="link burger-nav-link" href="./index.html"> Studio </a>
+          </li>
+          <li class="header-item">
+            <a class="link burger-nav-link" href="./portfolio.html">
+              Portfolio
+            </a>
+          </li>
+          <li class="header-item">
+            <a class="link burger-nav-link" href="./contacts.html">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <address class="burger-address">
+        <ul class="list burger-address-ul">
+          <li class="burger-address-li">
+            <a class="link burger-address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11
+            </a>
+          </li>
+
+          <li class="burger-address-li">
+            <a class="link burger-address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <ul class="list team-social-ul">
+        <li class="team-social-li">
+          <a class="link social-link" href="">
+            <svg class="social-svg" width="16" height="16">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-li">
+          <a class="link social-link" href="">
+            <svg class="social-svg" width="16" height="16">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-li">
+          <a class="link social-link" href="">
+            <svg class="social-svg" width="16" height="16">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-li">
+          <a class="link social-link" href="">
+            <svg class="social-svg" width="16" height="16">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

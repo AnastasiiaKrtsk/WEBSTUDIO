@@ -1,0 +1,243 @@
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address,
+.nav-ul {
+  display: none;
+}
+
+.logo {
+  display: inline-block;
+  padding: 24px 0;
+  /* margin-right: 76px; */
+
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+
+  color: #4d5ae5;
+}
+.logo:hover {
+  cursor: pointer;
+  color: #4d5ae5;
+}
+.logo:focus {
+  color: #4d5ae5;
+}
+.studio {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  color: #2e2f42;
+
+  transition: background-color 0.15s, color 0.15s;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 76px;
+  }
+  .current::after {
+    position: absolute;
+    content: "";
+
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: #404bbf;
+  }
+
+  .nav-link.current {
+    position: relative;
+    color: #404bbf;
+  }
+
+  .nav-link {
+    display: inline-block;
+    padding: 24px 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+
+    transition: color var(--transition);
+  }
+  .nav-link:hover {
+    color: #404bbf;
+  }
+  .nav-link:focus {
+    color: #404bbf;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-ul {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address {
+    display: block;
+    font-style: normal;
+  }
+  .address-link {
+    display: inline-block;
+    margin-right: 40;
+
+    font-size: 12px;
+    line-height: 1.17;
+    font-style: normal;
+    color: #434455;
+
+    transition: color var(--transition);
+  }
+  .address-link:hover {
+    cursor: pointer;
+    color: #404bbf;
+  }
+  .address-link:focus {
+    color: #404bbf;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: inline-block;
+    padding: 24px 0;
+
+    margin-right: 76px;
+
+    color: #4d5ae5;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+  }
+  .logo:hover {
+    cursor: pointer;
+    color: #4d5ae5;
+  }
+  .logo:focus {
+    color: #4d5ae5;
+  }
+  .studio {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    transition: background-color 0.15s, color 0.15s;
+    color: #2e2f42;
+  }
+  .current::after {
+    position: absolute;
+    content: "";
+
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: #404bbf;
+  }
+
+  .nav-link.current {
+    position: relative;
+    color: #404bbf;
+  }
+
+  .nav-link {
+    display: inline-block;
+    padding: 24px 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-link:hover {
+    color: #404bbf;
+  }
+  .nav-link:focus {
+    color: #404bbf;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-ul,
+  .address-ul {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address {
+    display: flex;
+    font-style: normal;
+  }
+  .address-link {
+    display: inline-block;
+    padding: 24px 0;
+    margin-right: 40;
+    font-size: 16px;
+
+    color: #434455;
+    font-style: normal;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-link:hover {
+    color: #404bbf;
+    cursor: pointer;
+  }
+  .address-link:focus {
+    color: #404bbf;
+  }
+}

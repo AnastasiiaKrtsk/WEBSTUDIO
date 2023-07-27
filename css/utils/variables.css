@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #434455;
+  --tittle-test-color: #2e2f42;
+  --hover-focus-color: #5358bd;
+  --acent-color: #4d5ae5;
+  --alternative-text-color: #f4f4fd;
+  --white-text: #ffffff;
+  --buttons-hover: #404bbf;
+  --buttons-bg-color: #f4f4fd;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
