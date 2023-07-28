@@ -106,7 +106,7 @@
 .burger-social-ul {
   display: flex;
   justify-content: space-between;
-  width: 328px;
+  min-width: 328px;
 }
 .burger-social-li {
   width: 40px;

@@ -43,7 +43,7 @@
 .social-text {
   color: #ffffff;
   text-align: center;
-  width: 264px;
+  width: 100%;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -196,7 +196,7 @@
   .social-text {
     color: #ffffff;
     text-align: start;
-    /* width: 264px; */
+    width: 100%;
     font-weight: 500;
     margin-bottom: 16px;
   }
@@ -354,7 +354,7 @@
   .social-text {
     color: #ffffff;
     text-align: start;
-    width: 264px;
+    width: 100%;
     font-weight: 500;
     margin-bottom: 16px;
   }
