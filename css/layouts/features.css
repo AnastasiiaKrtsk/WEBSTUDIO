@@ -3,11 +3,12 @@
 }
 .features-ul {
   display: block;
-  gap: 24px;
+  gap: 72px 24px;
   margin: 0 auto;
 }
 .features-li {
   margin-bottom: 72px;
+  width: 386px;
 }
 .features-li:last-child {
   margin-bottom: 0;
@@ -42,6 +43,7 @@
   }
   .features-li {
     flex-basis: calc((100% - 24px * 1) / 2);
+
     margin: 0;
   }
   .features-subheading {
