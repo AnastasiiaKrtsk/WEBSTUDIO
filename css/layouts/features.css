@@ -9,7 +9,7 @@
 }
 .features-li {
   margin-bottom: 72px;
-  width: 396px;
+  max-width: 396px;
 }
 .features-li:last-child {
   margin-bottom: 0;

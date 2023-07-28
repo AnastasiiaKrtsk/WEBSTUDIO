@@ -365,6 +365,9 @@
     font-weight: 500;
     margin-bottom: 16px;
   }
+  .footer-social-div {
+    margin-right: 80px;
+  }
   .footer-social-ul {
     display: flex;
     gap: 16px;
