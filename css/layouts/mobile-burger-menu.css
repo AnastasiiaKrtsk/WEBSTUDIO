@@ -126,6 +126,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.burger-social-link:hover {
+  background-color: #404bbf;
+}
+.burger-social-link:focus {
+  background-color: #404bbf;
+}
 .burger-social-svg {
   fill: #f4f4fd;
 }

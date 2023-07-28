@@ -43,7 +43,7 @@
   }
   .features-li {
     flex-basis: calc((100% - 24px * 1) / 2);
-
+    /* width: calc((100% - 24px) / 2); */
     margin: 0;
   }
   .features-subheading {

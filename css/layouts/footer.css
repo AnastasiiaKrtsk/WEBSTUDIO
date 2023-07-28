@@ -8,6 +8,7 @@
   justify-content: center;
   width: 496px;
 }
+
 .studio-footer {
   color: #f4f4fd;
 }
@@ -97,13 +98,6 @@
   text-align: center;
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  max-width: 1158px;
-  margin: auto;
-  padding: 0 15px;
-}
 .footer-input {
   font-size: 12px;
   line-height: 1.5;
@@ -158,6 +152,7 @@
 .modal-footer {
   display: block;
 }
+/* ============================================================================ */
 @media screen and (min-width: 768px) {
   .footer {
     background-color: #2e2f42;
@@ -196,8 +191,7 @@
     color: #ffffff;
     width: 264px;
     font-weight: 500;
-    margin-bottom: 16px;
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
   .social-text {
     color: #ffffff;
@@ -251,14 +245,15 @@
   .footer-div {
     text-align: start;
     display: inline-block;
-    text-align: ;
+    flex-wrap: nowrap;
     margin-right: 24px;
+    margin-bottom: 72px;
   }
 
   .footer-container {
     display: flex;
-    align-items: baseline;
-    max-width: 496px;
+    justify-content: center;
+    width: 100%;
     margin: auto;
     padding: 0 15px;
   }
