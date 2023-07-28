@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 496px;
+  max-width: 496px;
 }
 
 .studio-footer {
@@ -35,7 +35,7 @@
 .footer-text {
   color: #ffffff;
   text-align: start;
-  width: 264px;
+  max-width: 264px;
   font-weight: 500;
   margin-bottom: 72px;
 }
@@ -43,7 +43,6 @@
 .social-text {
   color: #ffffff;
   text-align: center;
-  width: 100%;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -104,7 +103,7 @@
   letter-spacing: 0.04em;
   padding-left: 16px;
 
-  width: 100%;
+  /* width: 100%; */
   height: 40px;
 
   color: #ffffff;
@@ -117,11 +116,16 @@
   color: #ffffff;
 }
 .footer-form {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 .footer-label {
-  display: block;
-  width: 398px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* max-width: 398px; */
   margin-bottom: 16px;
 }
 .subscribe-btn {
@@ -162,7 +166,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
   }
   .studio-footer {
     color: #f4f4fd;
@@ -196,7 +200,6 @@
   .social-text {
     color: #ffffff;
     text-align: start;
-    width: 100%;
     font-weight: 500;
     margin-bottom: 16px;
   }
@@ -250,13 +253,6 @@
     margin-bottom: 72px;
   }
 
-  .footer-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    padding: 0 15px;
-  }
   .footer-input {
     font-size: 12px;
     line-height: 1.5;
@@ -277,9 +273,12 @@
   }
   .footer-form {
     display: flex;
-    gap: 24px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
   }
   .footer-label {
+    margin-right: 24px;
     width: 100%;
   }
   .subscribe-btn {
@@ -354,7 +353,6 @@
   .social-text {
     color: #ffffff;
     text-align: start;
-    width: 100%;
     font-weight: 500;
     margin-bottom: 16px;
   }

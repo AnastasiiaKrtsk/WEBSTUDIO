@@ -32,6 +32,9 @@
   transition: color var(--transition);
 }
 
+.current-burger {
+  color: #404bbf;
+}
 .burger-nav-link:hover {
   color: #404bbf;
 }
